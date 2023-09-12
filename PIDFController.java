@@ -5,14 +5,14 @@ public class PIDFController {
 	float KP, KI, KD, KF;
 	double integralSum, iRange, lastError;
 	
-	public PIDFController(float KP, float KI, float KD, float KF){
+	public PIDFController(float KP, float KI, float KD, float KF, float iRange){
 		this.KP = KP;
 		this.KI = KI;
 		this.KD = KD;
 		this.KF = KF;
 		
 		this.integralSum = 0;
-		this.iRange = 1;
+		this.iRange = iRange;
 		this.lastError = 0;
 	}
 	
